@@ -1,0 +1,7 @@
+使用版本控制，如何让你更有信心进行有可能会造成破坏的更改？
+ 随时可以回滚
+git checkout <id>
+try using the command git reflog, which shows you all
+the commits that have been checked out recently
+
+如果你意外地将某个文件添加到暂存区中，可以使用 git reset 删除它。例如，如果你意外地添加了 lesson_2_reflections.txt，但不想提交它，请运行 git reset lesson_2_reflections.txt，此命令会从暂存区中删除该文件，但它仍在你的工作目录中。
